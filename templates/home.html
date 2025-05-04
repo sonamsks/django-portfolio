@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - My Portfolio{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section text-center py-5 bg-primary text-white">
+    <div class="container">
+        <img src="https://placehold.co/300x300/ffffff/3b82f6?text=Profile" alt="Profile Picture" class="profile-img mb-4">
+        <h1 class="display-4 fw-bold">Your Name</h1>
+        <p class="lead">Web Developer & Designer</p>
+        <p class="text-white-50">Creating beautiful and functional websites with passion</p>
+        <div class="mt-4">
+            <a href="#contact" class="btn btn-light btn-lg me-3">Contact Me</a>
+            <a href="#projects" class="btn btn-outline-light btn-lg">View Projects</a>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Skills & Expertise</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="https://placehold.co/100x100/3b82f6/ffffff?text=FE" alt="Frontend" class="mb-3">
+                        <h5 class="card-title">Frontend Development</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">HTML5 & CSS3</li>
+                            <li class="mb-2">JavaScript & React</li>
+                            <li class="mb-2">Bootstrap & Tailwind</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="https://placehold.co/100x100/3b82f6/ffffff?text=BE" alt="Backend" class="mb-3">
+                        <h5 class="card-title">Backend Development</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">Python & Django</li>
+                            <li class="mb-2">Node.js & Express</li>
+                            <li class="mb-2">RESTful APIs</li>
+                            <li>Database Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="https://placehold.co/100x100/3b82f6/ffffff?text=Tools" alt="Tools" class="mb-3">
+                        <h5 class="card-title">Tools & Technologies</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">Git & GitHub</li>
+                            <li class="mb-2">Docker & AWS</li>
+                            <li class="mb-2">VS Code</li>
+                            <li>CI/CD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Featured Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Project+1" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">E-commerce Platform</h5>
+                        <p class="card-text">A full-featured e-commerce platform built with Django and React, featuring secure payments and inventory management.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="btn btn-primary">View Project</a>
+                            <small class="text-muted">Django, React, PostgreSQL</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Project+2" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Task Management App</h5>
+                        <p class="card-text">A collaborative task management application with real-time updates and team collaboration features.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="btn btn-primary">View Project</a>
+                            <small class="text-muted">Node.js, MongoDB, Socket.io</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Project+3" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p class="card-text">A responsive portfolio website showcasing creative work and professional experience.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="btn btn-primary">View Project</a>
+                            <small class="text-muted">HTML5, CSS3, JavaScript</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section class="section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Professional Experience</h2>
+        <div class="timeline">
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="card-title mb-0">Senior Web Developer</h5>
+                        <span class="badge bg-primary">2020 - Present</span>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">Tech Solutions Inc.</h6>
+                    <p class="card-text">Leading development teams in creating scalable web applications. Implementing modern development practices and mentoring junior developers.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">✓ Led a team of 5 developers in building enterprise applications</li>
+                        <li class="mb-2">✓ Implemented CI/CD pipelines reducing deployment time by 40%</li>
+                        <li class="mb-2">✓ Developed microservices architecture improving system scalability</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="card-title mb-0">Web Developer</h5>
+                        <span class="badge bg-primary">2018 - 2020</span>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">Digital Creations</h6>
+                    <p class="card-text">Developed and maintained multiple client websites, focusing on user experience and performance optimization.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">✓ Built responsive websites for 20+ clients</li>
+                        <li class="mb-2">✓ Improved website performance by 60%</li>
+                        <li class="mb-2">✓ Implemented SEO best practices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Get In Touch</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <p class="text-center mb-4">I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                        <div class="text-center">
+                            <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
